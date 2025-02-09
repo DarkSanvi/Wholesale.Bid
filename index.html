@@ -1,0 +1,1392 @@
+
+<html lang="en">
+<head>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wholesale.Email</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      
+      /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Header Styling */
+header {
+    width: 100%;
+    background: #005bb5;
+    padding: 15px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+}
+
+/* Right Section: Search + Menu */
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+/* Search Box Styling */
+.search-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+}
+
+.search-container input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 250px;
+    font-size: 14px;
+    color: #333;
+}
+
+.search-container button {
+    background: #003f7f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    border-left: 1px solid #ccc;
+}
+
+.search-container button:hover {
+    background: #002b5e;
+}
+
+/* Navigation Menu */
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+   /* Contact & Help Section */
+        .contact-help-section {
+            background-color: #fff;
+            padding: 0px 0px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            margin: 40px auto;
+            max-width: 1200px;
+        }
+
+        /* Section Header */
+        .contact-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .contact-header h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .contact-header p {
+            font-size: 16px;
+            color: #777;
+        }
+
+        /* Contact Content */
+        .contact-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        /* Contact Item (Phone, Email) */
+        .contact-item {
+            flex: 1;
+            min-width: 220px;
+          
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-item i {
+            font-size: 28px;
+           
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .contact-item h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .contact-item p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            flex: 2;
+            min-width: 320px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .contact-form input {
+            width: 160%;
+            padding: 12px 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        .contact-form input:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        .contact-form button {
+            background: #005bb5;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    width: 100%;
+        }
+
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+
+
+
+    .footer1234 {
+        background: #005bb5;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .footer1234 p {
+        margin: 0;
+    }
+
+    .footer-social-icons {
+        display: flex;
+        gap: 15px;
+    }
+
+    .footer-social-icons a {
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    .footer-social-icons a:hover {
+        color: #4CAF50;
+    }
+    .who-can-use {
+  padding-bottom: 30px;
+}
+
+
+
+
+
+/* Wholesale Auctions Section Styling */
+.wholesale-auctions {
+    background: #f4f7fc;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.wholesale-auctions .container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.wholesale-auctions h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #003f7f;
+    margin-bottom: 40px;
+}
+
+/* Auction Content Grid */
+.auction-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Auction Item Styling */
+.auction-item {
+    flex: 1;
+    max-width: 300px;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.auction-item i {
+    font-size: 40px;
+    color: #003f7f;
+    margin-bottom: 20px;
+}
+
+.auction-item h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #003f7f;
+    margin-bottom: 15px;
+}
+
+.auction-item p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Hover Effect */
+.auction-item:hover {
+    background: #005bb5;
+    color: white;
+}
+
+.auction-item:hover i,
+.auction-item:hover h3 {
+    color: white;
+}
+/* Liquidation Inventory Section */
+.liquidation-inventory {
+    background: #f4f4f4;
+    padding: 80px 0;
+}
+
+.mxtl {
+  font-size: 30px;
+  font-weight: 700;
+  color: #003f7f;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #b71c1c;
+    margin-bottom: 40px;
+}
+
+/* Container */
+.liquidation-inventory .container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Content Layout */
+.liquidation-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Image Section */
+
+.liquidation-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.liquidation-image {
+    flex: 1; /* Increased width for the image */
+    min-width: 400px; /* Ensures the image section doesn't shrink too much */
+}
+
+/* Text Content */
+.liquidation-text {
+    flex: 1;
+    padding: 40px;
+    text-align: left;
+}
+
+.liquidation-text p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* List */
+.liquidation-list {
+    list-style: none;
+    padding: 0;
+}
+
+.liquidation-list li {
+    font-size: 16px;
+    color: #333;
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.liquidation-list li::before {
+    content: "✔";
+    color: #005BB5;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Button */
+.liquidation-btn {
+    display: inline-block;
+    background: #005BB5;
+    color: white;
+    font-size: 18px;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+
+.liquidation-btn:hover {
+    background: #9a1818;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .liquidation-content {
+        flex-direction: column;
+    }
+
+    .liquidation-text {
+        padding: 20px;
+        text-align: center;
+    }
+}
+/* Wholesale Categories Section */
+.wholesale-categories {
+    background: #fff;
+    padding: 80px 0;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 40px;
+}
+
+/* Container */
+.wholesale-categories .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Category Grid */
+/* Category Grid */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for 7 categories */
+    gap: 30px;
+    text-align: center;
+}
+
+
+/* Category Item */
+.category-item {
+    background: #f3f4f6;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-item i {
+    font-size: 40px;
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.category-item span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Hover Effect */
+.category-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .category-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* How It Works Section */
+.how-it-works {
+    background: #f7fafc;
+    padding: 80px 0;
+}
+
+/* Section Title */
+.how-it-works .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 50px;
+}
+
+/* Container */
+.how-it-works .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Steps Container */
+.steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    text-align: center;
+}
+
+/* Step */
+.step {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Step Icon */
+.step-icon {
+    font-size: 40px;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+/* Step Heading */
+.step h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+/* Step Description */
+.step p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Hover Effect */
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        width: 90%;
+    }
+}
+
+
+/* Why Choose Wholesale Auctions Section */
+.why-choose-auctions {
+    background: #f8f9fa;
+    padding: 60px 0;
+}
+
+/* Container */
+.why-choose-auctions .container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Benefits Section (3 items in a row) */
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 70%;
+}
+
+/* Benefit */
+.benefit {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Benefit Icon */
+.benefit-icon {
+    font-size: 35px;
+    color: #1e3a8a;
+    margin-right: 15px;
+}
+
+/* Benefit Content */
+.benefit-content {
+    flex: 1;
+}
+
+/* Benefit Heading */
+.benefit h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Benefit Description */
+.benefit p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Text Column (Heading + Subheading) */
+.text-column {
+    width: 30%;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.subheading {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Hover Effect */
+.benefit:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .why-choose-auctions .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-column {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .benefits {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .benefit {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .benefits {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .subheading {
+        font-size: 14px;
+    }
+}
+/* Wholesale Auctions Section */
+.wholesale-auctions {
+    background: #f4f7fa;
+    padding: 80px 0;
+}
+.section-title.xxc {
+  color: white;
+}
+.subheading.xxc {
+  color: white;
+}
+/* Container */
+.wholesale-auctions .container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Text Column */
+.text-columnx {
+    width: 35%;
+    position: relative;
+    height: 300px; /* Adjust as necessary for the desired height */
+    background-image: url('https://img.freepik.com/free-vector/warehouse-interior-with-cardboard-boxes-racks_107791-1120.jpg?t=st=1739110642~exp=1739114242~hmac=0c0ace9cd5904da2392622dfdd642b320f9b283313aef888ccda4e4f80d00d7f&w=826'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Black Overlay */
+.text-columnx::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    z-index: 1; /* Make sure overlay is above the image but below the text */
+}
+
+/* Text Overlay */
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  
+    z-index: 2; /* Ensure text is above the overlay */
+}
+
+/* Section Title */
+.section-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Subheading */
+.subheading {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Auction Types */
+.auction-types {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 65%;
+}
+
+/* Individual Auction Type */
+.auction-type {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Icon */
+.auction-type i {
+    font-size: 40px;
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+/* Auction Type Heading */
+.auction-type h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+/* Auction Type Description */
+.auction-type p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Hover Effect */
+.auction-type:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wholesale-auctions .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-column {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .auction-types {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .auction-type {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .section-title {
+        font-size: 26px;
+    }
+
+    .subheading {
+        font-size: 14px;
+    }
+
+    .auction-type h3 {
+        font-size: 18px;
+    }
+
+    .auction-type p {
+        font-size: 12px;
+    }
+}
+
+/* Featured Auctions Section */
+.featured-auctions {
+    background: #f9fafb;
+    padding: 60px 0;
+}
+
+/* Section Title and Subheading */
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+.subheading {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Container for Auction Items */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Auction Items Layout */
+.auction-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* Auction Item Style */
+.auction-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auction-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.auction-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+}
+
+.auction-description {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1e3a8a;
+    margin-top: 15px;
+}
+
+/* Hover Effect */
+.auction-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .auction-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .auction-items {
+        grid-template-columns: 1fr;
+    }
+}
+/* Why Buy Wholesale Section */
+.why-buy-wholesale {
+    background: #f9fafb;
+    padding: 60px 0;
+}
+
+/* Section Title and Subheading */
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+.subheading {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Container for Benefits List */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Benefits List Layout */
+.benefits-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+/* Benefit Item Style */
+.benefit-item {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-item i {
+    font-size: 50px;
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.benefit-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.benefit-item p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Hover Effect */
+.benefit-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .benefits-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .benefits-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+       </style>
+</head>
+<body>
+
+
+
+<header>
+    <div class="container">
+        <div class="logo">Wholesale.Bid</div>
+        <div class="right-section">
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+            <nav class="nav-links">
+                <a href="#">Auctions</a>
+                <a href="#">Wholesale Deals</a>
+                <a href="#">Bidding Options</a>
+                <a href="#">Support</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section class="liquidation-inventory">
+
+    <div class="container">
+        <div class="liquidation-content">
+            <div class="liquidation-image">
+                <img src="https://img.freepik.com/free-photo/processing-storehouse-stocks-boxes-with-order-receipts-details_482257-83417.jpg?t=st=1739109791~exp=1739113391~hmac=cd8a5845da4cd982caf6e6dd5db05acc4acf4976878cdb539b6b5c5c5c9dc16a&w=826" alt="Liquidation Inventory">
+            </div>
+            <div class="liquidation-text">
+                  <h3 class="mxtl">Liquidation Inventory – Overstock, Closeouts, and Excess Stock</h3>
+                <p>Discover unbeatable deals on liquidation stock, including overstock, closeouts, and excess inventory. Source high-quality products at the lowest prices for resale.</p>
+                <ul class="liquidation-list">
+                    <li><strong>Overstock:</strong> Brand-new items from retailers and manufacturers.</li>
+                    <li><strong>Closeouts:</strong> Clearance sales from top brands.</li>
+                    <li><strong>Excess Stock:</strong> Bulk inventory ready for wholesale buyers.</li>
+                </ul>
+                <a href="#" class="liquidation-btn">Explore Deals</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="wholesale-categories">
+    <h2 class="section-title">Wholesale Categories</h2>
+    <div class="container">
+        <div class="category-grid">
+            <div class="category-item">
+                <i class="fas fa-tv"></i>
+                <span>Electronics & Gadgets</span>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-tshirt"></i>
+                <span>Apparel & Accessories</span>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-spa"></i>
+                <span>Beauty & Personal Care</span>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-home"></i>
+                <span>Home & Kitchen</span>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-gamepad"></i>
+                <span>Toys & Games</span>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-briefcase"></i>
+                <span>Office & Business Supplies</span>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-heartbeat"></i>
+                <span>Health & Wellness</span>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="wholesale-auctions">
+    <div class="container">
+        <div class="text-columnx">
+            <div class="text-overlay">
+                <h2 class="section-title xxc">Wholesale Auctions</h2>
+                <p class="subheading xxc">Explore Bulk Lots and Pallet Sales at unbeatable prices.</p>
+            </div>
+        </div>
+        <div class="auction-types">
+            <div class="auction-type">
+                <i class="fas fa-box"></i>
+                <h3>Bulk Lots</h3>
+                <p>Get access to wholesale bulk lots across various categories and industries, ensuring massive savings.</p>
+            </div>
+            <div class="auction-type">
+                <i class="fas fa-pallet"></i>
+                <h3>Pallet Sales</h3>
+                <p>Bid on pallets filled with a variety of products for even greater discounts. Perfect for resellers and businesses.</p>
+            </div>
+            <div class="auction-type">
+                <i class="fas fa-warehouse"></i>
+                <h3>Warehouse Deals</h3>
+                <p>Take advantage of warehouse clearance auctions with exclusive deals on overstock and liquidation inventory.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="how-it-works">
+    <h2 class="section-title">How It Works</h2>
+    <div class="container">
+        <div class="steps">
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>Browse Auctions</h3>
+                <p>Explore wholesale lots across multiple categories.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-gavel"></i>
+                </div>
+                <h3>Place Your Bids</h3>
+                <p>Compete for the best bulk deals.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3>Win and Save</h3>
+                <p>Secure wholesale prices on large quantities.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="why-choose-auctions">
+    <div class="container">
+        <div class="benefits">
+            <div class="benefit">
+                <div class="benefit-icon">
+                    <i class="fas fa-tags"></i>
+                </div>
+                <div class="benefit-content">
+                    <h3>Deep Discounts</h3>
+                    <p>Save big on bulk purchases with wholesale auctions. Get prices that let you compete in the market effectively.</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">
+                    <i class="fas fa-box-open"></i>
+                </div>
+                <div class="benefit-content">
+                    <h3>Exclusive Inventory</h3>
+                    <p>Gain access to liquidation, closeouts, and wholesale lots that are not available anywhere else.</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">
+                    <i class="fas fa-gavel"></i>
+                </div>
+                <div class="benefit-content">
+                    <h3>Fair Bidding</h3>
+                    <p>Participate in a transparent and competitive auction process that guarantees fair pricing.</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-column">
+            <h2 class="section-title">Why Choose Wholesale Auctions?</h2>
+            <p class="subheading">Experience incredible deals with our auction platform designed for bulk buyers.</p>
+        </div>
+    </div>
+</section>
+<section class="featured-auctions">
+    <!-- Section Heading Outside the Container -->
+    <div class="section-heading">
+        <h2 class="section-title">Featured Auctions</h2>
+        <p class="subheading">Highlighting the best deals across all categories. Don't miss out on these exclusive offers!</p>
+    </div>
+
+    <!-- Container for Items -->
+    <div class="container">
+        <div class="auction-items">
+            <!-- Row 1 -->
+            <div class="auction-item">
+                <img src="https://img.freepik.com/free-vector/warehouse-interior-with-cardboard-boxes-racks_107791-1120.jpg?t=st=1739110642~exp=1739114242~hmac=0c0ace9cd5904da2392622dfdd642b320f9b283313aef888ccda4e4f80d00d7f&w=826" alt="Auction 1">
+                <h3>Electronics Bulk Lot</h3>
+                <p class="auction-description">Massive savings on electronics from top brands. Don’t miss this limited-time deal!</p>
+                <span class="price">Starting from $500</span>
+            </div>
+            <div class="auction-item">
+                <img src="https://img.freepik.com/free-vector/warehouse-interior-with-cardboard-boxes-racks_107791-1120.jpg?t=st=1739110642~exp=1739114242~hmac=0c0ace9cd5904da2392622dfdd642b320f9b283313aef888ccda4e4f80d00d7f&w=826" alt="Auction 2">
+                <h3>Apparel Closeout</h3>
+                <p class="auction-description">Huge discounts on clothing, accessories, and more. Perfect for retailers!</p>
+                <span class="price">Starting from $300</span>
+            </div>
+            <div class="auction-item">
+                <img src="https://img.freepik.com/free-vector/warehouse-interior-with-cardboard-boxes-racks_107791-1120.jpg?t=st=1739110642~exp=1739114242~hmac=0c0ace9cd5904da2392622dfdd642b320f9b283313aef888ccda4e4f80d00d7f&w=826" alt="Auction 3">
+                <h3>Home & Kitchen Deals</h3>
+                <p class="auction-description">Premium quality home and kitchen items at unbeatable prices.</p>
+                <span class="price">Starting from $400</span>
+            </div>
+            <div class="auction-item">
+                <img src="https://img.freepik.com/free-vector/warehouse-interior-with-cardboard-boxes-racks_107791-1120.jpg?t=st=1739110642~exp=1739114242~hmac=0c0ace9cd5904da2392622dfdd642b320f9b283313aef888ccda4e4f80d00d7f&w=826" alt="Auction 4">
+                <h3>Beauty Products Bulk</h3>
+                <p class="auction-description">Exclusive liquidation of beauty and personal care products. Perfect for resellers.</p>
+                <span class="price">Starting from $250</span>
+            </div>
+            <!-- Row 2 -->
+            <div class="auction-item">
+                <img src="https://img.freepik.com/free-vector/warehouse-interior-with-cardboard-boxes-racks_107791-1120.jpg?t=st=1739110642~exp=1739114242~hmac=0c0ace9cd5904da2392622dfdd642b320f9b283313aef888ccda4e4f80d00d7f&w=826" alt="Auction 1">
+                <h3>Electronics Bulk Lot</h3>
+                <p class="auction-description">Massive savings on electronics from top brands. Don’t miss this limited-time deal!</p>
+                <span class="price">Starting from $500</span>
+            </div>
+            <div class="auction-item">
+                <img src="https://img.freepik.com/free-vector/warehouse-interior-with-cardboard-boxes-racks_107791-1120.jpg?t=st=1739110642~exp=1739114242~hmac=0c0ace9cd5904da2392622dfdd642b320f9b283313aef888ccda4e4f80d00d7f&w=826" alt="Auction 2">
+                <h3>Apparel Closeout</h3>
+                <p class="auction-description">Huge discounts on clothing, accessories, and more. Perfect for retailers!</p>
+                <span class="price">Starting from $300</span>
+            </div>
+            <div class="auction-item">
+                <img src="https://img.freepik.com/free-vector/warehouse-interior-with-cardboard-boxes-racks_107791-1120.jpg?t=st=1739110642~exp=1739114242~hmac=0c0ace9cd5904da2392622dfdd642b320f9b283313aef888ccda4e4f80d00d7f&w=826" alt="Auction 3">
+                <h3>Home & Kitchen Deals</h3>
+                <p class="auction-description">Premium quality home and kitchen items at unbeatable prices.</p>
+                <span class="price">Starting from $400</span>
+            </div>
+            <div class="auction-item">
+                <img src="https://img.freepik.com/free-vector/warehouse-interior-with-cardboard-boxes-racks_107791-1120.jpg?t=st=1739110642~exp=1739114242~hmac=0c0ace9cd5904da2392622dfdd642b320f9b283313aef888ccda4e4f80d00d7f&w=826" alt="Auction 4">
+                <h3>Beauty Products Bulk</h3>
+                <p class="auction-description">Exclusive liquidation of beauty and personal care products. Perfect for resellers.</p>
+                <span class="price">Starting from $250</span>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="why-buy-wholesale">
+    <!-- Section Heading Outside the Container -->
+    <div class="section-heading">
+        <h2 class="section-title">Why Buy Wholesale?</h2>
+        <p class="subheading">Benefits of purchasing in bulk through auctions. Maximize savings and value!</p>
+    </div>
+
+    <!-- Container for Benefits -->
+    <div class="container">
+        <div class="benefits-list">
+            <div class="benefit-item">
+                <i class="fas fa-dollar-sign"></i>
+                <h3>Massive Savings</h3>
+                <p>Get the best deals on bulk purchases. Save money while buying more.</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-warehouse"></i>
+                <h3>Exclusive Inventory</h3>
+                <p>Access liquidation, closeouts, and wholesale lots not available anywhere else.</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-handshake"></i>
+                <h3>Secure Transactions</h3>
+                <p>Enjoy a secure, transparent auction process with clear terms and pricing.</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-gift"></i>
+                <h3>Variety of Options</h3>
+                <p>Choose from a wide range of products across different categories and industries.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   <!-- Contact & Help Section -->
+    <section class="contact-help-section">
+        <div class="contact-header">
+            <h2>Contact & Help</h2>
+            <p>If you need additional assistance, feel free to reach out.</p>
+        </div>
+        <div class="contact-content">
+            <!-- Left Columns: Contact Info Items -->
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                    <h3>Phone</h3>
+                    <p>+1 800 123 4567</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h3>Email</h3>
+                    <p>support@wholesale.email</p>
+                </div>
+            </div>
+        
+            <!-- Right Column: Contact Form -->
+            <div class="contact-form">
+                <input type="email" placeholder="Your Email" />
+                <input type="text" placeholder="Your Message" />
+                <button type="submit">Send</button>
+            </div>
+        </div>
+      
+    </section>
+
+
+<!-- Footer Section -->
+<footer class="footer1234">
+    <p>&copy; 2025 Wholesale.Email. All rights reserved by Developer Hasebur.</p>
+    <div class="footer-social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+</footer>
+</body>
+</html>
+
